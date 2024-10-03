@@ -89,15 +89,15 @@ enum
 
 constexpr char NAC = '\0';
 
-#define ExampleTableEnd                                                                                                        \
+constexpr CommandLineExample ExampleTableEnd{nullptr, nullptr};                                                                \
     {                                                                                                                          \
         nullptr, nullptr                                                                                                       \
     }
-#define OptionTableEnd                                                                                                         \
+constexpr CommandLineOptionDefinition OptionTableEnd{UINT8_MAX, nullptr, NAC, nullptr, nullptr};                               \
     {                                                                                                                          \
         UINT8_MAX, nullptr, NAC, nullptr, nullptr                                                                              \
     }
-#define CommandTableEnd                                                                                                        \
+constexpr CommandLineCommand CommandTableEnd{nullptr, nullptr, nullptr, nullptr, nullptr};                                     \
     {                                                                                                                          \
         nullptr, nullptr, nullptr, nullptr, nullptr                                                                            \
     }
